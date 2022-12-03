@@ -1,0 +1,19 @@
+.logoutBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+
+}
+
+.bookingHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;   
+}
+
+.heading{
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

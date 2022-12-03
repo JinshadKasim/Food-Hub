@@ -1,0 +1,37 @@
+body{
+    background-image: url('/static/images/childrens.jfif');
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+.loginDiv{
+    margin-top: 80px;
+    margin-left: 0px;
+    /* background-color: aqua; */
+}
+
+
+.loginDiv2{
+    width: 420px;
+    height: 350px;
+    background-color: rgb(171, 179, 179);
+    padding-left: 100px;
+    padding-top: 80px;
+    border-radius: 10%;
+
+}
+
+
+.adminHeading{
+    text-decoration: underline;
+    margin-left: 40%;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+.headingDiv{
+    height: 100px;
+    padding-top: 20px;
+    background-color: rgb(185, 184, 187);
+}
+
