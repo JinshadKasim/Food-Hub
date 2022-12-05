@@ -17,3 +17,11 @@
     text-decoration: underline;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.tableDiv{
+    width: 70%;
+    margin-left: 15%;
+}
+.customtable{
+    border-radius: 50%;
+}
+
