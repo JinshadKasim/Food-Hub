@@ -11,33 +11,45 @@
     <link rel="stylesheet" href="{% static 'css/admin_login.css' %}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-    <title>Document</title>
+    <title>Admin Login</title>
 </head>
 
 <body>
-    <h1 class="adminHeading">Admin Login</h1>
+
+
+
+  <head>
+    <div class="headerDiv">
+      <h1 class="adminHeading">Admin Login</h1>
+    </div>
+  </head>
+
+
+
+
     <div class="login-page">
         <div class="form">
-          <form class="login-form">
-            <input type="text" placeholder="username" id="user_name"/>
-            <input type="password" placeholder="password" id="password"/>
-            <button type="button" onclick="login()">login</button>
+          <form class="login-form" method="post" action="admin_login">
+            {% csrf_token %}
+            <input type="text" placeholder="username" id="user_name" name="user_name"/>
+            <input type="password" placeholder="password" id="password" name="password"/>
+            <button type="submit">login</button>
           </form>
         </div>
       </div>
-    <script>
-        function login(){
-        user_name = document.getElementById("user_name").value
-        password = document.getElementById("password").value
-        if(user_name=='admin' && password=='123'){
-            console.log
-            window.location.replace('dashboard');
 
 
-        }
-    }
+      <footer>
+        <div class="pagefooter">
 
-    </script>
+            <p>Copyrights<sup>&copy;</sup> 2022. Developed with by ABC & team</p>
+
+        </div>
+    </footer>
+
+
+
+
 </body>
 
 </html>

@@ -1,3 +1,11 @@
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),url('/static/images/earth.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
 .logoutBtn{
     display: flex;
     justify-content: center;
@@ -7,21 +15,40 @@
 }
 
 .bookingHeading{
-    display: flex;
     justify-content: center;
+    display: flex;
     align-items: center;
-    height: 100px;   
+    width: 100%;
+    height: 100px;
+    background-color: rgb(66, 63, 63);
+    color: rgb(253, 247, 247);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 .heading{
-    text-decoration: underline;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .tableDiv{
     width: 70%;
     margin-left: 15%;
+    background-color: rgb(224, 220, 220);
+    border-radius: 5px;
 }
 .customtable{
     border-radius: 50%;
+}
+
+
+.pagefooter{
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(62, 60, 60);
 }
 

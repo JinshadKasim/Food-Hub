@@ -14,7 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
     <script src="{% static 'js/dashboard.js' %}"></script>
-    <title>Document</title>
+    <title>Dashboard</title>
 </head>
 
 <body>
@@ -47,33 +47,12 @@
                     <td>{{i.address}}</td>
                     <td>{{i.food_details}}</td>
                     <td>{{i.status}}</td>
-                    <td><button type="button" class="btn btn-secondary btnsz" data-bs-toggle="modal"
-                            data-bs-target="#exampleModa">Update</button></td>
+                    <td><a href="cancel_data/{{i.id}}"><button type="button"
+                                class="btn btn-danger">Canceled</button></a>
+                        <a href="complete_data/{{i.id}}"><button type="button"
+                                class="btn btn-primary">Completed</button></a>
+                    </td>
                 </tr>
-
-
-
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModa" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                Update
-                            </div>
-                            <div class="modal-footer">
-                                <a href="cancel_data/{{i.id}}"><button type="button" class="btn btn-secondary"
-                                    data-bs-dismiss="modal">Canceled</button></a>
-                                <a href="update_data/{{i.id}}"><button type="button" class="btn btn-primary">Completed</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
 
                 {% endfor %}
@@ -81,11 +60,30 @@
         </table>
     </div>
 
-    <div class="logoutBtn"><a href="admin_login">
-            <button type="button" class="btn btn-primary">Log Out</button>
+    <div class="logoutBtn"><a href="{% url 'admin_logout' %}">
+            <button type="button" class="btn btn-secondary">Log Out</button>
         </a>
     </div>
     </div>
+
+      
+
+    <br><br><br><br><br>
+   <footer>
+        <div class="pagefooter">
+
+            <p>Copyrights<sup>&copy;</sup> 2022. Developed with by ABC & team</p>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
 
 
 
