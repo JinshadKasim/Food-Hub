@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-1&xt0(5vcc91^3ibval4sfex^rec=qspmb0elgi^r$g^17bq%l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -75,14 +75,24 @@ WSGI_APPLICATION = 'FoodHub.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME':'food_hub',
+#         'USER': 'postgres',
+#         'PASSWORD': '123',
+#         'PORT': '2255',
+#         'HOST': 'localhost'
+#             }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'food_hub',
-        'USER': 'postgres',
+        'ENGINE': 'mysql.connector.django',
+        'NAME':'jinshadkasim$foodhub',
+        'USER': 'jinshadkasim',
         'PASSWORD': '123',
-        'PORT': '2255',
-        'HOST': 'localhost'
+        'PORT': '3306',
+        'HOST': 'jinshadkasim.mysql.pythonanywhere-services.com'
             }
 }
 
@@ -127,3 +137,12 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+
+
+
+
+
+
